@@ -25,7 +25,9 @@ public class CORE : MonoBehaviour
     {
         for (int i = 0; i < 10; i++)
         {
-            print(Random.Range(1, 10));
+            //print(Random.Range(1, 10));
+            print(i);
+            Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
         }
         Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
     }
